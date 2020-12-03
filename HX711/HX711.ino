@@ -19,6 +19,13 @@ void setup() {
   Serial.println("Press a,s,d,f to increase calibration factor by 10,100,1000,10000 respectively");
   Serial.println("Press z,x,c,v to decrease calibration factor by 10,100,1000,10000 respectively");
   Serial.println("Press t for tare");
+   Serial.begin(9600);
+  Serial.println("HX711 Calibration");
+  Serial.println("Remove all weight from scale");
+  Serial.println("After readings begin, place known weight on scale");
+  Serial.println("Press a,s,d,f to increase calibration factor by 10,100,1000,10000 respectively");
+  Serial.println("Press z,x,c,v to decrease calibration factor by 10,100,1000,10000 respectively");
+  Serial.println("Press t for tare");
   scale.set_scale();
   scale.tare(); //Reset the scale to 0
  
