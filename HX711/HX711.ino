@@ -4,7 +4,7 @@
 #define CLK  D6
  
 HX711 scale(DOUT, CLK);
- 
+ //ini comment github
 //Change this calibration factor as per your load cell once it is found you many need to vary it in thousands
 float calibration_factor = 109525; //-106600 worked for my 40Kg max scale setup 
  
